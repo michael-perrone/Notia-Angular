@@ -1,0 +1,23 @@
+<div>
+<div id="real-b-container">
+<div id="b-container">
+  <button class="fg-buttons back-black" id="f-button"><img style="margin-right:10px;position: relative; top: 8px" src="assets/fb.png">Login with Facebook</button>
+  <button class="fg-buttons back-black" id="g-button"><img style="margin-right:10px; position: relative; top: 8px" src="assets/g.png">Login with Google</button>
+</div>
+</div>
+<div>
+  <form class="main-blue" id="register-container">
+    <p id="sdst">Start Dating Smarter Today</p>
+    <input placeholder="First Name" class="lr-inputs back-black">
+    <input placeholder="Email" class="lr-inputs back-black">
+    <input placeholder="Password" class="lr-inputs back-black" type="password">
+    <select style="background-color: black; color: white; border: none; border-bottom: 2px solid white;
+    border-radius: 0; width: 200px;">
+        <option>Age</option>
+        <option *ngFor="let ageOption of ageOptions">{{ageOption}}</option>
+    </select>
+    <button class="main-blue back-black" id="reg-button">Register</button>
+  </form>
+</div>
+</div>
+

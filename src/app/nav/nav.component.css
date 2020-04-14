@@ -1,0 +1,38 @@
+#title {
+    font-size: 44px;
+    margin-top: 6px;
+    margin-left: 8px;
+}
+
+#nav {
+    justify-content: space-between;
+}
+
+#logo {
+    height: 32px;
+    width: 32px;
+    margin-top:15px;
+}
+
+#img-title-slogan {
+    flex-direction: column;
+}
+
+
+@media (max-width: 500px) {
+    #nav {
+        flex-direction: column;
+    }
+    #img-title-slogan {
+        width: 100%;
+        align-items: center;
+    }
+    #slog {
+        margin-left: 0;
+    }
+    #img-title {
+        margin-left: 0;
+    }
+}
+
+

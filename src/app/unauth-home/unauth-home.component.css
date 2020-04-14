@@ -1,0 +1,10 @@
+#unauth-home {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 500px) {
+    #unauth-home {
+        flex-direction: column-reverse;
+    }
+}

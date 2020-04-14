@@ -1,0 +1,7 @@
+<form #loginForm="ngForm" id="whole-form" class="d-flex" (ngSubmit)="login()">
+  <div id="login-form-container" class="d-flex">
+    <input #email="ngModel" [(ngModel)]="model.email" name="email" placeholder="Email" required class="lr-inputs back-black main-blue">
+    <input #password="ngModel" [(ngModel)]="model.password" name="password" id="p-input" required type="password" placeholder="Password" class="lr-inputs back-black main-blue">
+  </div>
+  <button [disabled]="!loginForm.valid" id="login-button" class="main-blue back-black">Login</button>
+  </form> 

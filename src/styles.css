@@ -1,1 +1,120 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-blue {
+    color: #D7EEFF;
+}
+
+.back-black {
+    background-color: black;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.d-flex { 
+    display: flex;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    --main-color: #D7EEFF;
+  }
+
+.lr-inputs {
+    border: none;
+    border-bottom: 2px solid #D7EEFF;
+    color:#D7EEFF;
+    margin-right: 10px;
+    width: 160px;
+    font-size: 16px;
+    margin-top: 12px;
+    padding-bottom: 2px;
+    height: 28px;
+    outline: none;
+    padding-left: 6px;
+}
+
+.lr-inputs:focus {
+    animation-duration: 1.1s;
+    animation-name: border-switch;
+    animation-iteration-count: 1;
+    border: 2px solid var(--main-color);
+}
+
+::placeholder {
+    color: #D7EEFF;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #D7EEFF;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #D7EEFF;
+  }
+
+
+@keyframes border-switch {
+    from {
+        border-bottom: 2px solid var(--main-color);
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
+
+    20% {
+        border-left: none;
+        border-right: 2px solid var(--main-color);
+        border-top: none;    
+    }
+    
+    40% {    
+        border-left: none;
+        border-top: 2px solid var(--main-color);
+    }
+
+    60% {
+        border-left: 2px solid var(--main-color);
+    }
+}
+
+
+@keyframes constant-border-switch {
+    20% {
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+      border-top: 2px solid var(--main-color);  
+    }
+    33% {
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+        border-right: 2px solid var(--main-color);
+       
+    }
+    66% {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid var(--main-color);
+    }
+    100% {
+        border-left: 2px solid var(--main-color);
+        border-bottom: none;
+    }
+
+}
