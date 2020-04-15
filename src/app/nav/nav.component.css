@@ -1,7 +1,7 @@
 #title {
-    font-size: 44px;
-    margin-top: 6px;
-    margin-left: 8px;
+    font-size: 54px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 #nav {
@@ -9,17 +9,23 @@
 }
 
 #logo {
+    margin-left: 30px;
     height: 32px;
     width: 32px;
-    margin-top:15px;
+    margin-top:35px;
 }
 
 #img-title-slogan {
     flex-direction: column;
 }
 
+#slog {
+    margin-left: 45px;
+    font-size: 18px;
+}
 
-@media (max-width: 500px) {
+
+@media (max-width: 650px) {
     #nav {
         flex-direction: column;
     }
@@ -31,6 +37,9 @@
         margin-left: 0;
     }
     #img-title {
+        margin-left: 0;
+    }
+    #logo {
         margin-left: 0;
     }
 }

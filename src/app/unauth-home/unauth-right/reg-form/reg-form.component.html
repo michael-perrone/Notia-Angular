@@ -1,0 +1,15 @@
+<div>
+    <form class="main-blue" id="register-container">
+      <p id="sdst">Start Dating Smarter Today</p>
+      <input placeholder="First Name" class="lr-inputs back-black">
+      <input placeholder="Email" class="lr-inputs back-black">
+      <input placeholder="Password" class="lr-inputs back-black" type="password">
+      <div>
+      <select class="main-blue back-black " id="drop">
+          <option>Age</option>
+          <option *ngFor="let ageOption of ageOptions">{{ageOption}}</option>
+      </select>
+      <button class="main-blue back-black" id="reg-button">Register</button>
+    </div>
+    </form>
+  </div>

@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+    /* You can add global styles to this file, and also import other style files */
 
 
 * {
@@ -7,7 +7,7 @@
 }
 
 .main-blue {
-    color: #D7EEFF;
+    color: var(--main-color);
 }
 
 .back-black {
@@ -31,15 +31,15 @@ button {
 }
 
 :root {
-    --main-color: #D7EEFF;
+    --main-color: rgb(219, 219, 219);
   }
 
 .lr-inputs {
     border: none;
-    border-bottom: 2px solid #D7EEFF;
-    color:#D7EEFF;
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
     margin-right: 10px;
-    width: 160px;
+    width: 240px;
     font-size: 16px;
     margin-top: 12px;
     padding-bottom: 2px;
@@ -56,14 +56,14 @@ button {
 }
 
 ::placeholder {
-    color: #D7EEFF;
+    color: var(--main-color);
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #D7EEFF;
+    color: var(--main-color);
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #D7EEFF;
+    color: var(--main-color);
   }
 
 
